@@ -1,6 +1,0 @@
-@spotify_client_HostAddress = http://localhost:5285
-
-GET {{spotify_client_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
