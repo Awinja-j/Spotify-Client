@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Pbu9bLShQ87k7fLGR7RAONwtFJcU2rml3ImIaL1+z5M=",
+  "Source": "spotify-client",
+  "BasePath": "_content/spotify-client",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
