@@ -3,18 +3,27 @@ using System.Text.Encodings.Web;
 
 namespace MvcMovie.Controllers;
 
-public class HelloWorldController : Controller
+public class HomeController : Controller
 {
     // 
-    // GET: /HelloWorld/
-    public string Index()
+    // GET: /Home/
+    public IActionResult Index()
     {
-        return "This is my default action...";
+        return View();
     }
     // 
-    // GET: /HelloWorld/Welcome/ 
-    public string Welcome()
+    // GET: /Home//Welcome/ 
+    // Requires using System.Text.Encodings.Web;
+    public IActionResult Welcome(string name = "User", int numTimes = 1)
     {
-        return "This is the Welcome action method...";
+        ViewData["Message"] = "Hello " + name;
+        ViewData["NumTimes"] = numTimes;
+        return View();
+    }
+
+    // GET: /Home/Privacy/
+    public IActionResult Privacy()
+    {
+        return View();
     }
 }
